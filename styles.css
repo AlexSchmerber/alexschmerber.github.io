@@ -1,0 +1,9 @@
+* {
+    font-family: "fantasy", sans-serif;
+}
+#greeting {
+    color: #000000;
+}
+body {
+    background-image: linear-gradient(to right, #DECBA4, #00c4ff);
+}
