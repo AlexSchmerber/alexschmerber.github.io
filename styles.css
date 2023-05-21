@@ -1,9 +1,77 @@
-* {
-    font-family: "fantasy", sans-serif;
-}
-#greeting {
-    color: #000000;
-}
 body {
-    background-image: linear-gradient(to right, #DECBA4, #00c4ff);
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    padding: 40px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+p.subtitle {
+    font-size: 18px;
+}
+
+/* Main Sections */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact */
+.contact-links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.contact-links a:last-child {
+    margin-right: 0;
+}
+
+.contact-links i {
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
 }
