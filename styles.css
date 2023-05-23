@@ -6,21 +6,109 @@ body {
 }
 
 /* Header */
-header {
-    padding: 40px;
-    background-color: #333333;
-    color: #ffffff;
+/*header {*/
+/*    padding: 40px;*/
+/*    background-color: #333333;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#rectangle-1{*/
+/*    margin-bottom: -70px;*/
+/*}*/
+
+/*#rectangle-2{*/
+/*    margin-bottom: -70px;*/
+/*}*/
+
+/*.rectangle-overlay {*/
+/*    position: absolute;*/
+/*    top: -10px;*/
+/*    left: -10px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background-color: #ffffff;*/
+/*    z-index: -1;*/
+/*}*/
+
+.rectangle {
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+    height: 20em; /* Adjust the height as desired */
+}
+
+/*#about{*/
+/*    position: relative;*/
+/*}*/
+
+.circle {
+    /*position: absolute;*/
     text-align: center;
+    /*margin-bottom: -80px;*/
+    z-index: 999;
+    /*text-align: center;*/
+    /*margin-top: -100px; !* Adjust the margin-top to control the overlap amount *!*/
+    /*background-color: black;*/
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-size: 32px;
+
+/*.circle-overlay {*/
+/*    position: absolute;*/
+/*    top: -10px;*/
+/*    left: -10px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background-color: #ffffff;*/
+/*    border-radius: 50%;*/
+/*    z-index: -1;*/
+/*}*/
+
+#headshot {
+    width: 30%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    /*border-radius: 100%;*/
+    border: white 40px solid;
+    object-position: top;
+    z-index: 999;
+    margin-top: -15%;
+    margin-bottom: -15%;
 }
 
-p.subtitle {
-    font-size: 18px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    #headshot {
+        width: 20%;
+        max-width: 200px;
+        margin-top: -10%;
+        margin-bottom: -10%;
+    }
 }
+
+@media (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    #headshot {
+        width: 40%;
+        max-width: 150px;
+        margin-top: -8%;
+        margin-bottom: -8%;
+    }
+}
+
+
+/*#headshot {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    object-fit: cover;*/
+/*    object-position: top; !* Adjust the object-position property *!*/
+/*    border-radius: 50%;*/
+/*}*/
+
+
 
 /* Main Sections */
 section {
@@ -75,3 +163,4 @@ footer {
     background-color: #333333;
     color: #ffffff;
 }
+
