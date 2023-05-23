@@ -6,64 +6,35 @@ body {
 }
 
 /* Header */
-/*header {*/
-/*    padding: 40px;*/
-/*    background-color: #333333;*/
-/*    color: #ffffff;*/
-/*    text-align: center;*/
-/*}*/
 
-/*#rectangle-1{*/
-/*    margin-bottom: -70px;*/
-/*}*/
-
-/*#rectangle-2{*/
-/*    margin-bottom: -70px;*/
-/*}*/
-
-/*.rectangle-overlay {*/
-/*    position: absolute;*/
-/*    top: -10px;*/
-/*    left: -10px;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background-color: #ffffff;*/
-/*    z-index: -1;*/
-/*}*/
+@keyframes border-shrink {
+    0% {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+    }
+}
 
 .rectangle {
-    position: relative;
+    /*position: relative;*/
     margin: 20px;
     overflow: hidden;
     background-color: lightsteelblue;
-    height: 20em; /* Adjust the height as desired */
+    height: 300px; /* Adjust the height as desired */
 }
-
-/*#about{*/
-/*    position: relative;*/
-/*}*/
 
 .circle {
-    /*position: absolute;*/
     text-align: center;
-    /*margin-bottom: -80px;*/
     z-index: 999;
-    /*text-align: center;*/
-    /*margin-top: -100px; !* Adjust the margin-top to control the overlap amount *!*/
-    /*background-color: black;*/
 }
-
-
-/*.circle-overlay {*/
-/*    position: absolute;*/
-/*    top: -10px;*/
-/*    left: -10px;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background-color: #ffffff;*/
-/*    border-radius: 50%;*/
-/*    z-index: -1;*/
-/*}*/
 
 #headshot {
     width: 30%;
@@ -72,43 +43,44 @@ body {
     object-fit: cover;
     /*border-radius: 100%;*/
     border: white 40px solid;
+    /*animation: border-shrink 1s ease-in-out forwards;*/
     object-position: top;
     z-index: 999;
-    margin-top: -15%;
-    margin-bottom: -15%;
+    margin-top: -200px;
+    margin-bottom: -200px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     /* Adjustments for smaller screens */
     #headshot {
-        width: 20%;
+        width: 80%;
         max-width: 200px;
-        margin-top: -10%;
-        margin-bottom: -10%;
+        margin-top: -160px;
+        margin-bottom: -160px;
+    }
+    .rectangle {
+        height: 200px;
+        max-height: 400px;
+        margin: 16px;
     }
 }
 
 @media (max-width: 480px) {
     /* Adjustments for even smaller screens */
     #headshot {
-        width: 40%;
+        width: 60%;
         max-width: 150px;
-        margin-top: -8%;
-        margin-bottom: -8%;
+        margin-top: -80px;
+        margin-bottom: -80px;
+    }
+
+    .rectangle{
+        height: 80px;
+        max-height: 320px;
+        margin: 10px;
     }
 }
-
-
-/*#headshot {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    object-fit: cover;*/
-/*    object-position: top; !* Adjust the object-position property *!*/
-/*    border-radius: 50%;*/
-/*}*/
-
-
 
 /* Main Sections */
 section {
