@@ -26,6 +26,7 @@ body {
 
 .rectangle {
     /*position: relative;*/
+    border-radius: 50px;
     font-size: 20px;
     margin: 8px;
     overflow: hidden;
@@ -39,7 +40,7 @@ body {
 }
 
 #headshot {
-    width: 23%;
+    width: 300px;
     height: auto;
     max-width: 200px;
     object-fit: cover;
@@ -52,19 +53,28 @@ body {
     margin-bottom: -100px;
 }
 
+#about{
+    width: 75%;
+}
+
+#about-section{
+    width: 75%;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     /* Adjustments for smaller screens */
     #headshot {
-        width: 80%;
-        max-width: 200px;
-        margin-top: -160px;
-        margin-bottom: -160px;
+        width: 160px;
+        max-width: 150px;
+        border: black 4px solid;
+        margin-top: -140px;
+        margin-bottom: -140px;
     }
     .rectangle {
         height: 200px;
-        max-height: 400px;
-        margin: 16px;
+        max-height: 200px;
+        margin: 12px;
         font-size: 15px;
     }
 }
@@ -72,16 +82,16 @@ body {
 @media (max-width: 480px) {
     /* Adjustments for even smaller screens */
     #headshot {
-        width: 60%;
-        max-width: 150px;
+        width: 80px;
+        max-width: 100px;
         margin-top: -80px;
         margin-bottom: -80px;
     }
 
     .rectangle{
-        height: 80px;
-        max-height: 320px;
-        margin: 10px;
+        height: 120px;
+        max-height: 120px;
+        margin: 6px;
     }
 }
 
