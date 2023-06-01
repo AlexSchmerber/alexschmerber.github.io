@@ -14,6 +14,11 @@ header p {
     font-size: 25px;
     margin-bottom: 0;
 }
+#bottom-socials {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 800px;
+}
 
 .rectangle {
     /*position: relative;*/
@@ -26,13 +31,18 @@ header p {
     height: 80px; /* Adjust the height as desired */]
 }
 
+a {
+    text-decoration: none; !important;
+    color: black; !important;
+}
+
 .circle {
     text-align: center;
     /*z-index: 999;*/
 }
 
 #headshot {
-    width: 200px;
+    width: auto;
     height: auto;
     max-width: 200px;
     object-fit: cover;
@@ -43,10 +53,12 @@ header p {
     /*z-index: 999;*/
     /*margin-top: -100px;*/
     /*margin-bottom: -100px;*/
+    padding: 0px;
 }
 
 #about{
-    width: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #about-section{

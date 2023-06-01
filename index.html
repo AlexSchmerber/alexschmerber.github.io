@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Alex Schmerber</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="text-center text-light bg-dark p-3">
@@ -17,25 +17,49 @@
 
 <section id="content" class="container">
 
-    <section id="about w-100">
+    <section id="about">
         <div class="row">
-            <div class="circle col-4 rounded-circle mt-4">
+            <hr>
+            <div class="circle col-4 offset-1 rounded-circle my-5">
                 <img id="headshot" class="rounded-circle" src="img/codeup_headshot.jpg" alt="Circle Image">
+                <div class="d-flex justify-content-around align-items-around mt-4">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-phone"></i> (726) 842-7135
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <a href="mailto:alex.g.schmerber@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                             <a href="https://www.linkedin.com/in/alex-schmerber/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                             <a href="https://github.com/AlexSchmerber" target="_blank"><i class="fa-brands fa-github "></i> Github</a>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div id="greeting" class="text-center col-7 my-auto fs-5">
+            <div id="greeting" class="text-center col-5 my-auto fs-5">
                 <p>
                     Hello, My name is Alex Schmerber. I live in San Antonio, Texas and have a passion for web development.<br>
                     I am currently seeking employment, please feel free to reach out to any of my contacts below.<br>
                     Your time is appreciated, thank you!
                 </p>
             </div>
+            <hr>
         </div>
     </section>
 
 
     <section id="projects" class="py-0 mx-auto">
         <h1 class="text-center">Projects</h1>
-        <hr class="w-75 mx-auto">
+        <hr class=" mx-auto">
         <div class="row">
             <div class="col-lg-3 bg-light border border-2 my-2 mx-auto">
                 <div class="project">
@@ -67,23 +91,25 @@
         </div>
     </section>
 
-    <section id="education-skills" class="py-3 w-75 mx-auto">
+    <section id="education-skills" class="py-3 mx-auto">
+        <h1 class="text-center">Background</h1>
+        <hr>
         <div class="px-5">
             <div class="row text-center">
-                <div class="col-lg-4 bg-light border border-2 my-2">
+                <div class="col-lg-3 mx-auto bg-light border border-2 my-2">
                     <h2 class="my-4"><strong>Education</strong></h2><hr class="w-25 mx-auto">
                     <p><strong>Codeup</strong><small class="">11/2022 - 05/2023</small><br>Certification of Completion
                         This 5-month coding boot camp teaches full-stack software development through 670 contact hours of hands-on technical training (20% more time than 4-year degree majors require). Students hone skills in modern web technologies, computer science, software engineering, and application architecture while gaining project experience with pair programming, debugging, troubleshooting, agile project management, user stories, feature lists, UI/UX, wireframing, and relational database design.
                     </p><hr class="w-25 mx-auto">
                 </div>
-                <div class="col-lg-4 bg-light border border-2 my-2">
+                <div class="col-lg-3 mx-auto bg-light border border-2 my-2">
                     <h2 class="text-center my-4"><strong>Technical Skills</strong></h2>
                     <hr class="w-25 mx-auto">
                     <span>HTML - CSS - Bootstrap - JavaScript - ES6 - jQuery - Ajax - JSON - RESTful API - REST API - Maven - Java SE - Java EE (Servlets, JSP, J2EE) - File I/O - MVC - Spring Boot - Hibernate - MySQL - Thymeleaf - Object-Oriented Programming (OOP) - Test-Driven Development (TDD) - Version Control with Git - Paired Programming - Agile Methodologies - Debugging - AWS Deployment - Apache TomCat - Unit Testing (JUnit) - Python
                     <br>Exposure to: Agile Management Tools - Trello and GitHub issues for Workflow - Project Management Tools - Github Pages - NPM - Scrum Stand Up - Documentation - Spring Framework</span>
                     <hr class="w-25 mx-auto">
                 </div>
-                <div class="col-lg-4 bg-light border border-2 my-2">
+                <div class="col-lg-3 mx-auto bg-light border border-2 my-2">
                     <h2 class="text-center my-4"><strong>Soft Skills</strong></h2>
                     <hr class="w-25 mx-auto">
                     <span> Collaborative - Peer Review - Innovative - Strong Communication Skills - Teamwork - Builds Relationships - Initiative - Analytical - Flexibility - Reliable - Integrity - Work Independently - Information Technology - Visualization - Virtualization - Engaging - Willingness to Learn- Information System - Collaborate - Problem Solving Skills - ERP programming - Research Skills - Dedicated - Competitive - Self-motivated - Committed - Cooperative - Innovative - Independent - Culture - Fast Paced  </span>
@@ -93,32 +119,30 @@
         </div>
     </section>
 
-    <section id="bottom-socials" class="bg-light py-2 mx-auto">
-        <div class="row">
-            <div class="col-6">
+    <section id="bottom-socials" class=" py-2 mx-auto my-5">
+        <h1 class="text-center">Connect!</h1>
+        <div class="d-flex justify-content-around fs-3">
+            <div class="">
                 <i class="fa-solid fa-phone"></i>
                 <span> (726) 842-7135</span>
             </div>
-            <div class="col-6">
-                <i class="fa-solid fa-envelope"></i>
+            <div class="">
                 <span>
-                <a href="mailto:alex.g.schmerber@gmail.com" target="_blank"> Email</a>
-            </span>
+                <a href="mailto:alex.g.schmerber@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
+                </span>
             </div>
-            <div class="col-6">
-            <span>
-                <a href="https://www.linkedin.com/in/alex-schmerber/" target="_blank"> Linkedin</a>
-            </span>
-            </div>
-            <div class="col-6">
-                <i class="fa-brands fa-github"></i>
+            <div class="">
                 <span>
-                <a href="https://github.com/AlexSchmerber" target="_blank"> Github</a>
-            </span>
+                    <a href="https://www.linkedin.com/in/alex-schmerber/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                </span>
+            </div>
+            <div class="">
+                <span>
+                    <a href="https://github.com/AlexSchmerber" target="_blank"><i class="fa-brands fa-github "></i> Github</a>
+                </span>
             </div>
         </div>
     </section>
-
 
 </section>
 
