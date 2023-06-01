@@ -28,7 +28,7 @@ header p {
 
 .circle {
     text-align: center;
-    z-index: 999;
+    /*z-index: 999;*/
 }
 
 #headshot {
@@ -40,9 +40,9 @@ header p {
     border: black 6px solid;
     /*animation: border-shrink 1s ease-in-out forwards;*/
     object-position: top;
-    z-index: 999;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    /*z-index: 999;*/
+    /*margin-top: -100px;*/
+    /*margin-bottom: -100px;*/
 }
 
 #about{
@@ -51,7 +51,7 @@ header p {
 
 #about-section{
     width: 1200px;
-    background-color: rgb(100, 100, 100, .5);
+    background-color: rgb(100, 100, 100, 1);
 
 }
 
@@ -64,19 +64,19 @@ header p {
         width: 600px;
     }
 
-    #headshot {
-        width: 130px;
-        height: auto;
-        max-width: 130px;
-        object-fit: cover;
-        /*border-radius: 100%;*/
-        border: black 4px solid;
-        /*animation: border-shrink 1s ease-in-out forwards;*/
-        object-position: top;
-        z-index: 999;
-        margin-top: -70px;
-        margin-bottom: -70px;
-    }
+    /*#headshot {*/
+    /*    width: 130px;*/
+    /*    height: auto;*/
+    /*    max-width: 130px;*/
+    /*    object-fit: cover;*/
+    /*    !*border-radius: 100%;*!*/
+    /*    border: black 4px solid;*/
+    /*    !*animation: border-shrink 1s ease-in-out forwards;*!*/
+    /*    object-position: top;*/
+    /*    z-index: 999;*/
+    /*    margin-top: -70px;*/
+    /*    margin-bottom: -70px;*/
+    /*}*/
 
     .rectangle {
         /*position: relative;*/
