@@ -20,16 +20,16 @@ header p {
     max-width: 800px;
 }
 
-.rectangle {
-    /*position: relative;*/
-    border-radius: 50px;
-    min-width: 400px;
-    font-size: 20px;
-    margin: 8px;
-    overflow: hidden;
-    background-color: lightsteelblue;
-    height: 80px; /* Adjust the height as desired */]
-}
+/*.rectangle {*/
+/*    !*position: relative;*!*/
+/*    border-radius: 50px;*/
+/*    min-width: 400px;*/
+/*    font-size: 20px;*/
+/*    margin: 8px;*/
+/*    overflow: hidden;*/
+/*    background-color: lightsteelblue;*/
+/*    height: 80px; !* Adjust the height as desired *!]*/
+/*}*/
 
 .card {
     border: 2px black solid;
@@ -51,6 +51,7 @@ a {
 }
 
 .circle {
+    margin-left: 150px;
     text-align: center;
     /*z-index: 999;*/
 }
@@ -76,18 +77,33 @@ a {
 }
 
 #about-section{
-    width: 1200px;
+    /*width: 1200px;*/
     background-color: rgb(100, 100, 100, 1);
 
 }
 
+#content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 @media (max-width: 991px){
-    #about-section{
-        width: 900px;
+    /*#about-section{*/
+    /*    width: 900px;*/
+    /*}*/
+
+    /*#about{*/
+    /*    width: 600px;*/
+    /*}*/
+
+    #content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
-    #about{
-        width: 600px;
+    .circle {
+        margin-left: 0;
     }
 
     /*#headshot {*/
@@ -121,7 +137,6 @@ a {
     }
 }
 
-@media
 
 /* Responsive adjustments */
 /*@media (max-width: 768px) {*/
