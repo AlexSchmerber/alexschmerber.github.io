@@ -8,16 +8,22 @@ body {
 /* Header */
 header {
     font-family: 'Playfair', sans-serif;
+    background-color: #D5E1FF;
+    border-bottom: black 1px solid;
 }
 
 header p {
     font-size: 25px;
     margin-bottom: 0;
 }
-#bottom-socials {
+#bottom-message {
     margin-top: 200px;
     margin-bottom: 200px;
     max-width: 800px;
+}
+
+#bottom-socials{
+    font-size: 25px;
 }
 
 /*.rectangle {*/
@@ -35,11 +41,18 @@ header p {
     border: 2px black solid;
     margin-top: 8px;
     margin-bottom: 8px;
+    background-color: #D5E1FF;
+
 }
 
-a:visited {
-    color: #4a6464;
+#greeting{
+    font-size: 23px;
 }
+
+
+/*a:visited {*/
+/*    color: #4a6464;*/
+/*}*/
 
 a {
     text-decoration: none; !important;
@@ -123,6 +136,11 @@ a {
     .card {
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 22px;
+    }
+
+    .card p {
+        text-align: center;
     }
 
     section {
@@ -135,6 +153,11 @@ a {
         margin-left: auto;
         margin-right: auto;
     }
+
+    #bottom-socials{
+        font-size: 18px;
+    }
+
 }
 
 
