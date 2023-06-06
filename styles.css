@@ -42,7 +42,6 @@ header p {
     margin-top: 8px;
     margin-bottom: 8px;
     background-color: #D5E1FF;
-
 }
 
 #greeting{
@@ -61,6 +60,16 @@ a {
 
 #projects a {
     text-decoration: underline;
+}
+
+#projects .card:nth-child(2) {
+    border-left: none; !important;
+    border-right: none; !important;
+}
+
+#education-skills .card:nth-child(2) {
+    border-left: none; !important;
+    border-right: none; !important;
 }
 
 .circle {
