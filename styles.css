@@ -26,17 +26,6 @@ header p {
     font-size: 25px;
 }
 
-/*.rectangle {*/
-/*    !*position: relative;*!*/
-/*    border-radius: 50px;*/
-/*    min-width: 400px;*/
-/*    font-size: 20px;*/
-/*    margin: 8px;*/
-/*    overflow: hidden;*/
-/*    background-color: lightsteelblue;*/
-/*    height: 80px; !* Adjust the height as desired *!]*/
-/*}*/
-
 .card {
     border: 2px black solid;
     margin-top: 8px;
@@ -48,6 +37,9 @@ header p {
     font-size: 23px;
 }
 
+#headshot{
+    margin-bottom: 20px;
+}
 
 /*a:visited {*/
 /*    color: #4a6464;*/
@@ -114,9 +106,13 @@ a {
     /*    width: 900px;*/
     /*}*/
 
-    /*#about{*/
-    /*    width: 600px;*/
-    /*}*/
+    header h1 {
+        font-size: 62px;
+    }
+
+    header p {
+        font-size: 42px;
+    }
 
     #content {
         margin-left: 0;
@@ -124,23 +120,14 @@ a {
         width: 100%;
     }
 
+    #headshot {
+        max-width: 360px;
+    }
+
+
     .circle {
         margin-left: 0;
     }
-
-    /*#headshot {*/
-    /*    width: 130px;*/
-    /*    height: auto;*/
-    /*    max-width: 130px;*/
-    /*    object-fit: cover;*/
-    /*    !*border-radius: 100%;*!*/
-    /*    border: black 4px solid;*/
-    /*    !*animation: border-shrink 1s ease-in-out forwards;*!*/
-    /*    object-position: top;*/
-    /*    z-index: 999;*/
-    /*    margin-top: -70px;*/
-    /*    margin-bottom: -70px;*/
-    /*}*/
 
     .card {
         margin-top: 0;
@@ -169,6 +156,18 @@ a {
         margin-right: auto;
     }
 
+    p {
+        font-size: 42px;
+    }
+
+    #education-skills h1 {
+        font-size: 68px;
+    }
+
+    #projects h1 {
+        font-size: 68px;
+    }
+
     #projects{
         width: 90%;
         margin-left: auto;
@@ -182,21 +181,30 @@ a {
 
     #greeting{
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 28px;
+        margin: 40px auto;
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 56px;
     }
 
     .top-socials{
-        font-size: 20px;
+        font-size: 34px;
+        margin: 50px 40px 0;
     }
 
     #bottom-socials{
-        font-size: 22px;
+        font-size: 30px;
+        margin-top: 30px;
     }
 
     #bottom-message{
         font-size: 24px;
+    }
+
+    #bottom-message h1{
+        font-size: 58px;
     }
 
 }
