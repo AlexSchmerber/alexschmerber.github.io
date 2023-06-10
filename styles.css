@@ -14,7 +14,7 @@ header {
 
 #connect {
     position: absolute;
-    margin-left: 10px;
+    left: 800px;
 }
 
 #connect-animation{
@@ -204,6 +204,15 @@ a {
         font-size: 34px;
         margin: 50px 40px 0;
     }
+
+    /*#connect {*/
+    /*    left: 700px;*/
+    /*}*/
+
+    /*#connect-animation{*/
+    /*    position: relative;*/
+    /*    right: 20%;*/
+    /*}*/
 
     #bottom-socials{
         font-size: 30px;
