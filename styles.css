@@ -205,14 +205,15 @@ a {
         margin: 50px 40px 0;
     }
 
-    /*#connect {*/
-    /*    left: 700px;*/
-    /*}*/
+    #connect {
+        position: relative;
+        left: 0;
+    }
 
-    /*#connect-animation{*/
-    /*    position: relative;*/
-    /*    right: 20%;*/
-    /*}*/
+    #connect-animation{
+        position: relative;
+        right: 0;
+    }
 
     #bottom-socials{
         font-size: 30px;
