@@ -210,10 +210,14 @@ a {
         margin: 50px 40px 0;
     }
 
-    /*#connect {*/
-    /*    position: relative;*/
-    /*    left: 0;*/
-    /*}*/
+    #connect {
+        position: relative;
+        left: 60px;
+    }
+    #lets{
+        position: relative;
+        right: -60px;
+    }
 
     /*#connect-animation{*/
     /*    position: relative;*/

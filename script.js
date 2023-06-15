@@ -11,7 +11,7 @@ if(window.innerWidth > 991) {
     let triggered = false
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY
-        const elementPosition = 2008
+        const elementPosition = 2100
         console.log("EP" + elementPosition);
         console.log("Scr" + scrolled);
 
@@ -25,7 +25,7 @@ if(window.innerWidth > 991) {
     function slideRight() {
         console.log("mymove called")
         let id = null;
-        let rightPos = 340;
+        let rightPos = 342;
         clearInterval(id);
         id = setInterval(frame, 5);
         function frame() {
