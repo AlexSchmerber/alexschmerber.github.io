@@ -17,9 +17,14 @@ header {
     left: 800px;
 }
 
+#lets{
+    position: relative;
+    right: 280px;
+}
+
 #connect-animation{
     position: relative;
-    right: 15%;
+    right: 12%;
 }
 
 
@@ -299,7 +304,7 @@ li {
 }
 
 .project img {
-    padding-bottom: 12px;
+    padding-bottom: 30px;
 
 }
 #projects p {

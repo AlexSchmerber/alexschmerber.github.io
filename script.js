@@ -2,11 +2,12 @@
 if(window.innerWidth > 991) {
 
     const animation = document.getElementById("connect-animation");
-    const elem = document.getElementById("connect");
+    const connect = document.getElementById("connect");
+    const lets = document.getElementById("lets");
     const socials = document.getElementById("bottom-socials");
 
-    socials.style.opacity = "0"
-    elem.style.opacity = "0"
+    // socials.style.opacity = "0"
+    animation.style.opacity = "0"
     let triggered = false
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY
@@ -16,41 +17,50 @@ if(window.innerWidth > 991) {
 
         if (scrolled > elementPosition && triggered === false) {
             slideLeft()
+            slideRight()
             triggered = true;
         }
     })
+
+    function slideRight() {
+        console.log("mymove called")
+        let id = null;
+        let rightPos = 340;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+            if (rightPos === 0) {
+                console.log("clear interval")
+                clearInterval(id)
+            } else {
+                rightPos--;
+                rightPos--;
+                lets.style.right = rightPos + "px"
+            }
+        }
+    }
 
 
     function slideLeft() {
         console.log("mymove called")
         let id = null;
-        let pos = 800;
+        let rightPos = 800;
         let opa = 0;
         clearInterval(id);
         id = setInterval(frame, 5);
-
         function frame() {
-            if (pos === 456) {
+            if (rightPos === 456) {
                 console.log("clear interval")
                 clearInterval(id)
-            } else if(pos < 530){
-                if(opa < 100){
-                    opa++;
-                    socials.style.opacity = opa + "%"
-                    elem.style.opacity = opa + "%"
-                }
-                pos--;
-                elem.style.opacity = opa + "%"
-                elem.style.left = pos + "px"
             } else {
                 if(opa < 100){
                     opa++;
-                    socials.style.opacity = opa + "%"
-                    elem.style.opacity = opa + "%"
+                    // socials.style.opacity = opa + "%"
+                    animation.style.opacity = opa + "%"
                 }
-                pos--;
-                pos--;
-                elem.style.left = pos + "px"
+                rightPos--;
+                rightPos--;
+                connect.style.left = rightPos + "px"
             }
         }
     }
