@@ -1,12 +1,16 @@
-if(window.innerWidth > 991) {
 
+if(window.innerWidth > 991) {
 
     const animation = document.getElementById("connect-animation");
     const elem = document.getElementById("connect");
+    const socials = document.getElementById("bottom-socials");
+
+    socials.style.opacity = "0"
+    elem.style.opacity = "0"
     let triggered = false
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY
-        const elementPosition = 1480
+        const elementPosition = 2008
         console.log("EP" + elementPosition);
         console.log("Scr" + scrolled);
 
@@ -16,22 +20,34 @@ if(window.innerWidth > 991) {
         }
     })
 
+
     function slideLeft() {
         console.log("mymove called")
         let id = null;
         let pos = 800;
+        let opa = 0;
         clearInterval(id);
         id = setInterval(frame, 5);
 
         function frame() {
-            if (pos === 450) {
+            if (pos === 456) {
                 console.log("clear interval")
                 clearInterval(id)
+            } else if(pos < 530){
+                if(opa < 100){
+                    opa++;
+                    socials.style.opacity = opa + "%"
+                    elem.style.opacity = opa + "%"
+                }
+                pos--;
+                elem.style.opacity = opa + "%"
+                elem.style.left = pos + "px"
             } else {
-                console.log("position--")
-                pos--;
-                pos--;
-                pos--;
+                if(opa < 100){
+                    opa++;
+                    socials.style.opacity = opa + "%"
+                    elem.style.opacity = opa + "%"
+                }
                 pos--;
                 pos--;
                 elem.style.left = pos + "px"

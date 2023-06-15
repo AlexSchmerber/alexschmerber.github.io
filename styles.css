@@ -65,10 +65,10 @@ a {
     text-decoration: underline;
 }
 
-#projects .card:nth-child(2) {
-    border-left: none;
-    border-right: none;
-}
+/*#projects .card:nth-child(2) {*/
+/*    border-left: none;*/
+/*    border-right: none;*/
+/*}*/
 
 #education-skills .card:nth-child(2) {
     border-left: none;
@@ -205,15 +205,15 @@ a {
         margin: 50px 40px 0;
     }
 
-    #connect {
-        position: relative;
-        left: 0;
-    }
+    /*#connect {*/
+    /*    position: relative;*/
+    /*    left: 0;*/
+    /*}*/
 
-    #connect-animation{
-        position: relative;
-        right: 0;
-    }
+    /*#connect-animation{*/
+    /*    position: relative;*/
+    /*    right: 0;*/
+    /*}*/
 
     #bottom-socials{
         font-size: 30px;
@@ -299,7 +299,15 @@ li {
 }
 
 .project img {
+    padding-bottom: 12px;
+
 }
+#projects p {
+    font-size: 20px;
+}
+
+/*#projects{*/
+/*}*/
 
 /* Contact */
 .contact-links a {
