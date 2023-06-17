@@ -51,7 +51,10 @@ header p {
 
 #greeting{
     font-size: 23px;
+    animation: fadein 2s;
 }
+
+
 
 #headshot{
     margin-bottom: 20px;
@@ -86,10 +89,14 @@ a {
     /*z-index: 999;*/
 }
 
+/*.project img{*/
+/*    border: black solid 2px;*/
+/*}*/
+
 #headshot {
     width: auto;
     height: auto;
-    max-width: 200px;
+    max-width: 240px;
     object-fit: cover;
     /*border-radius: 100%;*/
     border: black 6px solid;
@@ -332,6 +339,41 @@ li {
 
 .contact-links i {
     margin-right: 5px;
+}
+
+#bottom-socials div:hover {
+    animation: shake 0.5s;
+}
+.top-socials div:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    10% { opacity: 10%; }
+    20% { opacity: 20%; }
+    30% { opacity: 30%; }
+    40% { opacity: 40%; }
+    50% { opacity: 50%; }
+    60% { opacity: 60%; }
+    70% { opacity: 70%; }
+    80% { opacity: 80%; }
+    90% { opacity: 90%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-2deg); }
+    20% { transform: rotate(2deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-2deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-2deg); }
 }
 
 /* Footer */
