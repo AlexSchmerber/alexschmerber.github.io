@@ -1,4 +1,12 @@
 
+if(window.innerWidth < 991){
+    window.onresize = function(){
+        if(window.innerWidth > 991){
+            location.reload();
+        }
+    }
+}
+
 if(window.innerWidth > 991) {
 
     const animation = document.getElementById("connect-animation");
