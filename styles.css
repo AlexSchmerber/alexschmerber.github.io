@@ -120,8 +120,10 @@ a {
 }
 
 #content {
+    background-color: rgba(225, 205, 142, 0.67);
     margin-left: 100px;
     margin-right: 100px;
+    padding: 100px;
 }
 
 @media (max-width: 991px){
