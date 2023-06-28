@@ -131,6 +131,10 @@ a {
     /*    width: 900px;*/
     /*}*/
 
+    #content {
+        background-color: transparent;
+    }
+
     header h1 {
         font-size: 62px;
     }
