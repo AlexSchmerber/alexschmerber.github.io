@@ -89,9 +89,9 @@ a {
     /*z-index: 999;*/
 }
 
-/*.project img{*/
-/*    border: black solid 2px;*/
-/*}*/
+.project img{
+    border-radius: 12px;
+}
 
 #headshot {
     width: auto;
