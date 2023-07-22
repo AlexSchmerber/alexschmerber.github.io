@@ -51,7 +51,6 @@ header p {
 
 #greeting{
     font-size: 23px;
-    animation: fadein 2s;
 }
 
 
@@ -109,6 +108,7 @@ a {
 }
 
 #about{
+    animation: fadein 1.2s;
     padding-top: 100px;
     padding-bottom: 100px;
 }
