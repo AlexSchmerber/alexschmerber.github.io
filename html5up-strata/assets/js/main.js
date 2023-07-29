@@ -97,7 +97,6 @@
 
 		// Lightbox gallery.
 			$window.on('load', function() {
-
 				$('#two').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
@@ -111,6 +110,13 @@
 					usePopupNav: true,
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 				});
+				let topAnchor = $('#top-anchor')
+				$('#bottom-anchor').click(function(){
+					$('html, body').animate({
+						scrollTop: $('#two').offset().top // Scroll to the top-most image
+					}, 'slow');
+					topAnchor.click()
+				})
 
 			});
 
