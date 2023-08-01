@@ -118,6 +118,14 @@
 					topAnchor.click()
 				})
 
-			});
+			})
+
+			$("#send-mail").click(function(){
+				let subject = $("#email").val()
+				let msg = $("#message").val()
+				let emailAnchor = $("#a-email")
+				window.location.href = "mailto:alex.g.schmerber@gmail.com?subject=" + subject + "&body=" + msg
+				emailAnchor.href = "mailto:alex.g.schmerber@gmail.com?subject=Inquiry from Portfolio&amp;body=Dear Alex Schmerber,"
+			})
 
 })(jQuery);
